@@ -18,7 +18,8 @@ def make_edge_and_degree_dict(filename):
  
         dic[edge[0]].append(edge[1])
         deg[edge[0]]+=1
-    
+
+        # imposing undirectedness
         dic[edge[1]].append(edge[0])
         deg[edge[1]]+=1
             
