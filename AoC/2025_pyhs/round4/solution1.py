@@ -27,6 +27,7 @@ def check_neighbors_fast(data: npt.NDArray, i: int, j: int) -> int:
 
 
 if __name__ == "__main__":
+    print("Solution1")
     data = readInput()
     n_rows, n_cols = data.shape
 
