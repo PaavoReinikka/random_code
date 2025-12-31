@@ -45,7 +45,7 @@ if __name__ == "__main__":
         return count
 
     count = 0
-    while (previous := runner()) > 0:
+    while previous := runner():  # evaluates to zero when no more moves left
         count += previous
 
     print(f"Result: {count}")
